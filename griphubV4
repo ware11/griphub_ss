@@ -1014,7 +1014,7 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 				print("\nExecuted.")
 	
 				plr.Chatted:connect(function(message)
-					if message:sub(1,3) == "!id" then
+					if message:sub(1,5) == "!play" then
 						id = message:sub(2)
 						local args = message:split(" ")
 	
@@ -1063,6 +1063,1760 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 					end
 					if message:sub(1,3) == "!rj" then
 						game:GetService("TeleportService"):Teleport(gameid, plr);
+					end
+
+					if message:sub(1,3) == "!re" then
+						charr:breakjoints()
+					end
+					
+					if message:sub(1.5) == "!demesh" then					
+						for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+							if tool:IsA("Tool") then
+								tool.Handle.Mesh:Destroy()
+								tool.Parent = game:GetService("Players").LocalPlayer.Character -- I didn't use Equip because the Equip function unequips any other tools in your character.
+							end
+						end					
+					end
+					
+					if message:sub(1.5) == "!ufo" then
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.002, -0.025)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.387, -5.591, -1.532)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.025, 0.011, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.003, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.034, -0.002, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.448, -5.591, 1.474)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, 0.011, 0.034)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.002)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.689, -0.002, 0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.103, -5.591, 2.064)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.724, 0.011, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.01, 1, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.724, -0.002, 0.689)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.064, -5.591, -0.103)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.689, 0.011, -0.724)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 1, 0.01)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+					end
+					
+					if message:sub(1,7) == "!etools" then
+						for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+							if tool:IsA("Tool") then	                    
+								tool.Parent = game:GetService("Players").LocalPlayer.Character -- I didn't use Equip because the Equip function unequips any other tools in your character.
+							end
+						end
+					end
+					
+					if message:sub(1,5) == "!line" then
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(4.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(7.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(4.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(7.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(4.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(7.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(4.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(7.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(4.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(7.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(4.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(7.602, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.011, -0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.398, -6.613, -1.608)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, -0.011, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.011, 1, -0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+					end	
+					
+					if message:sub(1,5) == "!bone" then
+							
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.39, 1.158, 1.586)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.011, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.014, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.011, -0.014, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.586, 1.558, 0.81)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-1, -0.011, 0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.39, 1.158, 1.586)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.011, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.014, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.39, 1.158, 1.586)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.011, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.014, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.011, -0.014, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.586, 1.558, 0.81)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-1, -0.011, 0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.39, 1.158, 1.586)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.011, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.014, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.39, 1.158, 1.586)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.011, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.014, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.011, -0.014, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.586, 1.558, 0.81)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-1, -0.011, 0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.011, 1, 0.014)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.39, 1.158, 1.586)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.011, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.014, 1, 0.011)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						end
+					if message:sub(1,4) == "!hat" then
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.038, -0.998, -0.043)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.452, -1.664, 2.039)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.999, -0.038, -0.008)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.006, 0.043, -0.999)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.043, -0.998, -0.038)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-4.186, -1.664, 1.452)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.008, -0.038, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, 0.043, -0.006)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+					end
+					
+					if message:sub(1,6) == "!wings" then
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.86, 0.384, 0.337)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.907, 0.586, 1.671)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.352, -0.035, 0.936)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.371, 0.923, -0.105)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.875, 0.384, -0.294)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(3.988, 0.586, 1.362)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.332, -0.035, 0.943)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.352, 0.923, 0.158)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.939, 0.067, 0.337)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(5.751, -1.07, 1.671)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.342, 0.088, 0.936)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.033, 0.994, -0.105)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.954, 0.062, -0.294)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(6.767, -1.439, 1.362)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.3, -0.146, 0.943)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.015, 0.987, 0.158)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.939, 0.067, 0.337)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(5.751, 0.13, 1.671)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.342, 0.088, 0.936)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.033, 0.994, -0.105)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.954, 0.062, -0.294)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(6.767, -0.439, 1.362)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.3, -0.146, 0.943)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.015, 0.987, 0.158)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+					end
+					
+					if message:sub(1,9) == "!backpack" then
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.017, -0.012, 1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.249, 1.458, 2.422)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.024, 1, 0.013)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.024, -0.017)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.017, -0.012, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.249, 1.458, -2.856)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.024, 1, -0.013)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-1, 0.024, 0.017)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.017, -0.012, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(1.857, 1.458, -2.606)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.024, 1, -0.013)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-1, 0.024, 0.017)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.017, -0.012, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(3.895, 1.458, -2.606)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.024, 1, -0.013)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-1, 0.024, 0.017)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						
+					end
+					
+					if message:sub(1,4) == "!fly" then
+						
+						
+						-- Gui to Lua
+						-- Version: 3.2
+
+						-- Instances:
+
+						local ScreenGui = Instance.new("ScreenGui")
+						local Frame = Instance.new("Frame")
+						local UICorner1 = Instance.new("UICorner")
+						local orange3 = Instance.new("Frame")
+						local UIGradient = Instance.new("UIGradient")
+						local TextLabel = Instance.new("TextLabel")
+						local TextLabel_2 = Instance.new("TextLabel")
+						local TextButton = Instance.new("TextButton")
+						local UICorner = Instance.new("UICorner")
+						local TextButton_2 = Instance.new("TextButton")
+						local orange3_2 = Instance.new("Frame")
+						local UIGradient_2 = Instance.new("UIGradient")
+						local UICorner_2 = Instance.new("UICorner")
+
+						--Properties:
+
+						ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+						ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						ScreenGui.ResetOnSpawn = true
+
+						Frame.Parent = ScreenGui
+						Frame.Active = true
+						Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+						Frame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+						Frame.BorderColor3 = Color3.fromRGB(255, 145, 0)
+						Frame.BorderSizePixel = 0
+						Frame.Position = UDim2.new(0.5, 131, 0.564318538, -115)
+						Frame.Selectable = true
+						Frame.Draggable = true
+						Frame.Size = UDim2.new(0, 429, 0, 125)
+
+						UICorner1.Name = "UICorner1"
+						UICorner1.Parent = Frame
+
+						orange3.Name = "orange3"
+						orange3.Parent = Frame
+						orange3.Active = true
+						orange3.BackgroundColor3 = Color3.fromRGB(255, 128, 0)
+						orange3.BorderSizePixel = 0
+						orange3.ClipsDescendants = true
+						orange3.Selectable = true
+						orange3.Size = UDim2.new(0, 429, 0, 12)
+
+						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 247, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 0))}
+						UIGradient.Parent = orange3
+
+						TextLabel.Parent = orange3
+						TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TextLabel.BackgroundTransparency = 1.000
+						TextLabel.Size = UDim2.new(0, 429, 0, 12)
+						TextLabel.Font = Enum.Font.Code
+						TextLabel.Text = "griphub_ss fly gui"
+						TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+						TextLabel.TextScaled = true
+						TextLabel.TextSize = 19.000
+						TextLabel.TextWrapped = true
+
+						TextLabel_2.Parent = Frame
+						TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TextLabel_2.BackgroundTransparency = 1.000
+						TextLabel_2.Position = UDim2.new(0, 120, 0, 5)
+						TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+						TextLabel_2.Font = Enum.Font.Code
+						TextLabel_2.Text = "click the button to enable fly"
+						TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+						TextLabel_2.TextSize = 14.000
+
+						TextButton.Parent = Frame
+						TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+						TextButton.Position = UDim2.new(0, 415, 0, 1)
+						TextButton.Size = UDim2.new(0, 10, 0, 10)
+						TextButton.Font = Enum.Font.SourceSans
+						TextButton.Text = ""
+						TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+						TextButton.TextSize = 14.000
+
+						UICorner.CornerRadius = UDim.new(0, 3)
+						UICorner.Parent = TextButton
+
+						TextButton_2.Parent = Frame
+						TextButton_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+						TextButton_2.Position = UDim2.new(0, 122, 0, 55)
+						TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+						TextButton_2.Font = Enum.Font.Code
+						TextButton_2.Text = "FLY [CTRL==E]"
+						TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+						TextButton_2.TextSize = 14.000
+						TextButton_2.MouseButton1Down:Connect(function()
+							ScreenGui.Enabled = false
+						end)
+
+
+						orange3_2.Name = "orange3"
+						orange3_2.Parent = TextButton_2
+						orange3_2.Active = true
+						orange3_2.BackgroundColor3 = Color3.fromRGB(255, 128, 0)
+						orange3_2.BorderSizePixel = 0
+						orange3_2.ClipsDescendants = true
+						orange3_2.Selectable = true
+						orange3_2.Size = UDim2.new(0, 200, 0, 2)
+
+						UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 247, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 0))}
+						UIGradient_2.Parent = orange3_2
+
+						UICorner_2.CornerRadius = UDim.new(0, 3)
+						UICorner_2.Parent = TextButton_2
+
+						-- Scripts:
+
+						local function CJJH_fake_script() -- Frame.LocalScript 
+							local script = Instance.new('LocalScript', Frame)
+
+							local HotKey = Enum.KeyCode.Q-- Key to open Gui --
+							local UIS = game:GetService("UserInputService")
+
+							UIS.InputBegan:Connect(function(Key)
+								if Key.KeyCode == HotKey then
+									script.Parent.Visible = not script.Parent.Visible
+								end
+							end)
+						end
+						coroutine.wrap(CJJH_fake_script)()
+						local function FDMAPR_fake_script() -- TextButton.LocalScript 
+							local script = Instance.new('LocalScript', TextButton)
+
+							script.Parent.MouseButton1Down:Connect(function()
+								script.Parent.Parent.Parent.Enabled = false
+							end)
+						end
+						coroutine.wrap(FDMAPR_fake_script)()
+						local function QWTC_fake_script() -- TextButton_2.LocalScript 
+							local script = Instance.new('LocalScript', TextButton_2)
+
+							script.Parent.MouseButton1Down:Connect(function()
+
+								repeat wait()
+								until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+								local mouse = game.Players.LocalPlayer:GetMouse()
+								repeat wait() until mouse
+								local plr = game.Players.LocalPlayer
+								local torso = plr.Character.Torso
+								local flying = true
+								local deb = true
+								local ctrl = {f = 0, b = 0, l = 0, r = 0}
+								local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+								local maxspeed = 50
+								local speed = 0
+
+								function Fly()
+									local bg = Instance.new("BodyGyro", torso)
+									bg.P = 9e4
+									bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+									bg.cframe = torso.CFrame
+									local bv = Instance.new("BodyVelocity", torso)
+									bv.velocity = Vector3.new(0,0.1,0)
+									bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+									repeat wait()
+										plr.Character.Humanoid.PlatformStand = true
+										if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+											speed = speed+.5+(speed/maxspeed)
+											if speed > maxspeed then
+												speed = maxspeed
+											end
+										elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+											speed = speed-1
+											if speed < 0 then
+												speed = 0
+											end
+										end
+										if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+											bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+											lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+										elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+											bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+										else
+											bv.velocity = Vector3.new(0,0.1,0)
+										end
+										bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+									until not flying
+									ctrl = {f = 0, b = 0, l = 0, r = 0}
+									lastctrl = {f = 0, b = 0, l = 0, r = 0}
+									speed = 0
+									bg:Destroy()
+									bv:Destroy()
+									plr.Character.Humanoid.PlatformStand = false
+								end
+								mouse.KeyDown:connect(function(key)
+									if key:lower() == "e" then
+										if flying then flying = false
+										else
+											flying = true
+											Fly()
+										end
+									elseif key:lower() == "w" then
+										ctrl.f = 1
+									elseif key:lower() == "s" then
+										ctrl.b = -1
+									elseif key:lower() == "a" then
+										ctrl.l = -1
+									elseif key:lower() == "d" then
+										ctrl.r = 1
+									end
+								end)
+								mouse.KeyUp:connect(function(key)
+									if key:lower() == "w" then
+										ctrl.f = 0
+									elseif key:lower() == "s" then
+										ctrl.b = 0
+									elseif key:lower() == "a" then
+										ctrl.l = 0
+									elseif key:lower() == "d" then
+										ctrl.r = 0
+									end
+								end)
+								Fly()
+							end)
+						end
+						coroutine.wrap(QWTC_fake_script)()
+
+						
+						
 					end
 	
 					if message:sub(1,3) == "!tp" then 
@@ -1213,7 +2967,7 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 						TextLabel_3.BackgroundTransparency = 1.000
 						TextLabel_3.Size = UDim2.new(0, 200, 0, 145)
 						TextLabel_3.Font = Enum.Font.Code
-						TextLabel_3.Text = " !id . !mute . !steal . !mute . !off . !dupe . !tpa . !tp . !bp . !rj . !tpp"
+						TextLabel_3.Text = " !play . !mute . !steal . !mute . !off . !duper . !tpp . !tp . !bp . !rj . !tpp . !demesh . !line . !ufo . !bone . !wings . !re . !fly . !etools . !backpack " 
 						TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 						TextLabel_3.TextSize = 14.000
 						TextLabel_3.TextWrapped = true
