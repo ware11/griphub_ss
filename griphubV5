@@ -650,13 +650,13 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 				UIGradient3_6.Name = "UIGradient3"
 				UIGradient3_6.Parent = Frame3_6
 	
-				cock.Name = "cock"
+				cock.Name = "no"
 				cock.Parent = grippos
 				cock.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
 				cock.Position = UDim2.new(0, 315, 0, 220)
 				cock.Size = UDim2.new(0, 200, 0, 50)
 				cock.Font = Enum.Font.RobotoMono
-				cock.Text = "boner"
+				cock.Text = "weeni"
 				cock.TextColor3 = Color3.fromRGB(0, 0, 0)
 				cock.TextScaled = true
 				cock.TextSize = 51.000
@@ -2300,6 +2300,85 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 						end
 					end	
 					
+					if message:sub(1,7) == "!scythe" then
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.03, -0.998, 0.05)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.155, 0.696, -0.009)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.02, 0.05, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.031, -0.018)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.03, -0.998, 0.05)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.67, 0.696, -0.009)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.02, 0.05, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.031, -0.018)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.03, -0.998, 0.05)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-3.476, 0.696, -0.009)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.02, 0.05, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.031, -0.018)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.988, 0.148, 0.05)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.025, -4.525, -0.009)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.052, 0.011, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.148, 0.989, -0.018)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.767, 0.64, 0.05)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.995, -5.668, -0.009)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.05, -0.018, 0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.64, 0.768, -0.018)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+
+					end
+					
+					if message:sub(1,3) == "!dj" then
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.015, 0.014, -1)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.008, 1.132, -0.081)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(1, 0.009, -0.015)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(-0.009, 1, 0.015)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+					end
 					if message:sub(1,5) == "!bone" then
 							
 						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(1, -0.014, -0.011)
@@ -2448,6 +2527,100 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 						do x:Play()
 						end
 						
+					end
+					
+					if message:sub(1,6) == "!stand" then
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.003, -0.041, -0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.727, -2.533, -4.324)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.999, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.011, -0.003)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.45, -0.041, -0.892)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.853, -3.739, -2.984)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.009, -0.999, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.893, 0.011, 0.45)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+						
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.003, -0.041, -0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(2.017, -2.171, -3.849)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.999, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.011, -0.003)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.003, -0.041, -0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-0.727, -3.488, -4.324)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.011, -0.999, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(1, 0.011, -0.003)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(0.007, -0.04, -0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(0.371, -5.202, -4.324)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(0.259, -0.965, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.966, 0.259, -0.003)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.014, -0.038, -0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-1.154, -0.466, -4.324)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.271, -0.962, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.962, -0.271, -0.003)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
+
+						game.Players.LocalPlayer.Backpack.BoomBox.GripForward =  Vector3.new(-0.005, -0.04, -0.999)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripPos =  Vector3.new(-2.394, -2.843, -4.324)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripRight =  Vector3.new(-0.038, -0.998, 0.041)
+						game.Players.LocalPlayer.Backpack.BoomBox.GripUp =  Vector3.new(0.999, -0.039, -0.003)
+						wait(0.2)
+						game.Players.LocalPlayer:findFirstChildOfClass('Backpack')['BoomBox'].Parent = game.Players.LocalPlayer.Character
+						wait(0.2)
+						h = game.Players.LocalPlayer.Character.Humanoid
+						tracks = h:GetPlayingAnimationTracks()
+						for _,x in pairs(tracks)
+						do x:Play()
+						end
 					end
 					
 					if message:sub(1,6) == "!wings" then
@@ -2967,8 +3140,7 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 						TextLabel_3.BackgroundTransparency = 1.000
 						TextLabel_3.Size = UDim2.new(0, 200, 0, 145)
 						TextLabel_3.Font = Enum.Font.Code
-						TextLabel_3.Text = " !play . !mute . !steal . !mute . !off . !duper . !tpp . !tp . !bp . !rj . !tpp . !demesh . !line . !ufo . !bone . !wings . !re . !fly . !etools . !backpack " 
-						TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+						TextLabel_3.Text = " !play !mute  !steal !off !duper !tpp !t  !bp !rj !tpp !demesh !line !ufo !bone !wings !re !fly !etools !backpack !scythe !dj !stand"
 						TextLabel_3.TextSize = 14.000
 						TextLabel_3.TextWrapped = true
 	
