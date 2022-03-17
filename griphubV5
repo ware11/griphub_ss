@@ -230,7 +230,7 @@ local function JKYNEI_fake_script() -- TextButton.LocalScript
 			TextLabel_3.Position = UDim2.new(0, 100, 0, 55)
 			TextLabel_3.Size = UDim2.new(0, 355, 0, 99)
 			TextLabel_3.Font = Enum.Font.RobotoMono
-			TextLabel_3.Text = "VERSION: [2]"
+			TextLabel_3.Text = "VERSION: [5]"
 			TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 			TextLabel_3.TextSize = 25.000
 			TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 136, 0)
